@@ -47,7 +47,7 @@ const Profile = (props) => {
 
     const handleSubmit= async(e)=>{
         e.preventDefault();
-        let res = await axios.put(`http://localhost:8080/users/update/${userDetails._id}`,details);
+        let res = await axios.put(`https://blogbackend-i274.onrender.com/users/update/${userDetails._id}`,details);
         let data = res.data
         console.log(data)
         if(data.success){
@@ -73,7 +73,7 @@ const Profile = (props) => {
           console.log(reader.result)
 
           setuserPics({...userPics,coverPic:reader.result})
-          let res = await axios.put(`http://localhost:8080/users/update/${userDetails._id}`,{coverPic:reader.result});
+          let res = await axios.put(`https://blogbackend-i274.onrender.com/users/update/${userDetails._id}`,{coverPic:reader.result});
           let data = res.data
           console.log(data)
           if(data.success){
@@ -99,7 +99,7 @@ const Profile = (props) => {
           console.log(reader.result)
 
           setuserPics({...userPics,profilePic:reader.result})
-          let res = await axios.put(`http://localhost:8080/users/update/${userDetails._id}`,{profilePic:reader.result});
+          let res = await axios.put(`https://blogbackend-i274.onrender.com/users/update/${userDetails._id}`,{profilePic:reader.result});
           let data = res.data
           console.log(data)
           if(data.success){

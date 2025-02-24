@@ -24,7 +24,7 @@ const FriendProfile = (props) => {
 
   const [userDetails, setuserDetails] = useState('');
     async function getUserDetails (){
-        let res = await axios.get(`http://localhost:8080/users/getSingleUser/${userId}`);
+        let res = await axios.get(`https://blogbackend-i274.onrender.com/users/getSingleUser/${userId}`);
         let data = res.data;
         console.log(data)
         setuserDetails(data.user)
@@ -50,7 +50,7 @@ const FriendProfile = (props) => {
 
     const [allPosts, setallPosts] = useState([]);
     const getUserPost = async()=>{
-      let res = await axios.get(`http://localhost:8080/posts/userPost/${userId}`)
+      let res = await axios.get(`https://blogbackend-i274.onrender.com/posts/userPost/${userId}`)
       let data = res.data
       console.log(data)
       setallPosts(data.posts)
@@ -72,7 +72,7 @@ const FriendProfile = (props) => {
 
 
     const handlefollow=async()=>{
-      let res = await axios(`http://localhost:8080/users/follow/${userId}`,{
+      let res = await axios(`https://blogbackend-i274.onrender.com/users/follow/${userId}`,{
         headers:{
           'Authorization': token
         }

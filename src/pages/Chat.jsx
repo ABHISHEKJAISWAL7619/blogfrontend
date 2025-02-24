@@ -21,7 +21,7 @@ let friend = location.state.friend;
 console.log(friend)
 
 // async function getChat(){
-//     let res = await axios.get(`http://localhost:8080/message/getMesage/${friend._id}`,{
+//     let res = await axios.get(`https://blogbackend-i274.onrender.com/message/getMesage/${friend._id}`,{
 //         headers:{
 //             'Authorization': token
 //         }

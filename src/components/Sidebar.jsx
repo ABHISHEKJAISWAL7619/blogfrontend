@@ -94,7 +94,7 @@ const Sidebar = (props) => {
     
       //   console.log(finalObj)
     
-      //   let res = await axios.post('http://localhost:8080/posts/create',finalObj,{
+      //   let res = await axios.post('https://blogbackend-i274.onrender.com/posts/create',finalObj,{
       //     headers:{
       //       'Authorization':userStore.token
       //     }
@@ -152,7 +152,7 @@ const Sidebar = (props) => {
           file:finalArr
         }
     
-        let res = await axios.post('http://localhost:8080/posts/create',finalObj,{
+        let res = await axios.post('https://blogbackend-i274.onrender.com/posts/create',finalObj,{
           headers:{
             'Authorization':userStore.token
           }

@@ -108,7 +108,7 @@ const FriendProfile = (props) => {
 
     {  !originaluser.followings.includes(userId) && <button  onClick={handlefollow} className='bg-green-950 text--white px-3 py-2 rounded-md' >Follow</button>}
    {  originaluser.followings.includes(userId) &&  <button onClick={handlefollow} className='bg-green-950 text--white px-3 py-2 rounded-md' >Unfollow</button>}
-   l<Link to="/chat" state={{friend:userDetails}}  className='bg-blue-950 mx-2 text-white px-3 py-2 rounded-md hover:bg-blue-700' >Chat</Link>
+   {/* l<Link to="/chat" state={{friend:userDetails}}  className='bg-blue-950 mx-2 text-white px-3 py-2 rounded-md hover:bg-blue-700' >Chat</Link> */}
   </div>
   <ul className="py-4 mt-2 text-gray-700 flex items-center  justify-around">
     <li className="flex flex-col items-center justify-around">
